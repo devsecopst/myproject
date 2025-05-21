@@ -1,8 +1,9 @@
 repos:
-  - repo: https://github.com/returntocorp/semgrep
-    rev: v1.119.0  # You can update this to the latest Semgrep release
+  - repo: https://github.com/semgrep/pre-commit
+    rev: v1.122.0
     hooks:
       - id: semgrep
+        entry: semgrep
         name: semgrep - All Major Security Rules
         args:
           [
