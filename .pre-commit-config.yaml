@@ -3,16 +3,16 @@ repos:
     rev: v1.122.0
     hooks:
       - id: semgrep
+        name: semgrep - Security Rules
         entry: semgrep
-        name: semgrep - All Major Security Rules
         args:
           [
-            "--config=p/r2c-security-audit",  # Comprehensive security audit rules
-            "--config=p/owasp-top-ten",           # OWASP Top 10 rules
-            "--config=p/secrets",                 # Secrets detection
-            "--config=p/dockerfile",              # Dockerfile-specific security
-            "--config=p/golang",                  # Go security
-            "--config=p/python",                  # Python security
-            "--config=p/java",              # JavaScript security
-            "--config=p/typescript",              # TypeScript security
+            "--config=p/r2c-security-audit",   # General security audits
+            "--config=p/owasp-top-ten",        # OWASP Top 10 security issues
+            "--config=p/secrets",              # Hardcoded secrets detection
+            "--config=p/dockerfile",           # Dockerfile issues
+            "--config=p/golang",               # Go security rules
+            "--config=p/python",               # Python security rules
+            "--config=p/java",                 # Java security rules
+            "--config=p/typescript"            # TypeScript rules
           ]
