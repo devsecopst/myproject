@@ -13,6 +13,6 @@ repos:
             "--config=p/dockerfile",              # Dockerfile-specific security
             "--config=p/golang",                  # Go security
             "--config=p/python",                  # Python security
-            "--config=p/javascript",              # JavaScript security
+            "--config=p/java",              # JavaScript security
             "--config=p/typescript",              # TypeScript security
           ]
