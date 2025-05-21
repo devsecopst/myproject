@@ -3,5 +3,4 @@ repos:
     rev: v1.122.0  # Replace with latest stable Semgrep CLI release
     hooks:
       - id: semgrep
-        args: ["--config=https://semgrep.dev/p/java"]  # You can use "--config=YOUR_URL" for custom rules
-
+        args: ["--config=https://semgrep.dev/p/r2c-security-audit"]  # You can use "--config=YOUR_URL" for custom rules
