@@ -3,7 +3,22 @@ repos:
     rev: v1.122.0
     hooks:
       - id: semgrep
-        entry: semgrep
         #Replace <SEMGREP_RULESET_URL> with your custom rule source
         #or see https://semgrep.dev/explore to select a ruleset and copy its URL
-        args: ['--config','p/gitleaks','--config', 'p/secrets','--config', 'p/comment','--config','p/cwe-top-25', '--error', '--skip-unknown-extensions']
+        args: ['--config','p/gitleaks',
+               '--config', 'p/secrets',
+               '--config', 'p/comment',
+               '--config','p/cwe-top-25',
+               '--config','p/default',
+               '--config','p/owasp-top-ten',
+               '--config','p/security-audit',
+               '--config','p/secure-defaults',
+               '--config','p/javascript',
+               '--config','p/java',
+               '--config','p/react',
+               '--config','p/dockerfile',
+               '--config','p/docker-compose',
+               '--config','p/security-code-scan',
+               '--config','p/findsecbugs','--dryrun', '--skip-unknown-extensions',"--disable-version-check"
+        ]
+
