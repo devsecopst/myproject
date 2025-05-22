@@ -14,11 +14,10 @@ repos:
                '--config','p/security-audit',
                '--config','p/secure-defaults',
                '--config','p/javascript',
-               '--config','p/java',
                '--config','p/react',
                '--config','p/dockerfile',
                '--config','p/docker-compose',
                '--config','p/security-code-scan',
-               '--config','p/findsecbugs', '--skip-unknown-extensions',"--disable-version-check"
+               '--config','p/findsecbugs',
+               '--error', '--skip-unknown-extensions'
         ]
-
