@@ -22,7 +22,6 @@ public class Comment {
 
     public static Comment create(String username, String body) {
         long time = new Date().getTime();
-        String secret = "secret";
         Timestamp timestamp = new Timestamp(time);
         Comment comment = new Comment(UUID.randomUUID().toString(), username, body, timestamp);
         try {
