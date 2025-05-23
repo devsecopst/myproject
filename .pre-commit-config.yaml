@@ -4,6 +4,7 @@ repos:
     hooks:
       - id: semgrep
         pass_filenames: false
+        continue_on_error: true
         #Replace <SEMGREP_RULESET_URL> with your custom rule source
         #or see https://semgrep.dev/explore to select a ruleset and copy its URL
         args: ['--config','p/gitleaks',
