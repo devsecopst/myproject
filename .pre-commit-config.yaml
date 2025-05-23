@@ -4,7 +4,7 @@ repos:
     hooks:
       - id: semgrep
         pass_filenames: false
-        continue_on_error: true
+        always_run: true
         #Replace <SEMGREP_RULESET_URL> with your custom rule source
         #or see https://semgrep.dev/explore to select a ruleset and copy its URL
         args: ['--config','p/gitleaks',
@@ -23,5 +23,5 @@ repos:
                '--config','p/docker-compose',
                '--config','p/security-code-scan',
                '--config','p/findsecbugs',
-               '--severity=ERROR','--skip-unknown-extensions','--disable-version-check','--quiet'
+               '--skip-unknown-extensions','--disable-version-check','--quiet'
         ]
