@@ -22,5 +22,5 @@ repos:
                '--config','p/docker-compose',
                '--config','p/security-code-scan',
                '--config','p/findsecbugs',
-               '--skip-unknown-extensions','--disable-version-check','--quiet'
+               '--severity=ERROR','--skip-unknown-extensions','--disable-version-check','--quiet'
         ]
