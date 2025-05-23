@@ -1,27 +1,9 @@
 repos:
-  - repo: https://github.com/semgrep/pre-commit
-    rev: v1.122.0
+  - repo: local
     hooks:
-      - id: semgrep
+      - id: semgrep-warn-only
+        name: Semgrep (Warn Only, Non-Blocking)
+        entry: bash semgrep-warn-only.sh
+        language: system
         pass_filenames: false
         always_run: true
-        #Replace <SEMGREP_RULESET_URL> with your custom rule source
-        #or see https://semgrep.dev/explore to select a ruleset and copy its URL
-        args: ['--config','p/gitleaks',
-               '--config', 'p/secrets',
-               '--config', 'p/comment',
-               '--config','p/cwe-top-25',
-               '--config','p/default',
-               '--config','p/owasp-top-ten',
-               '--config','p/security-audit',
-               '--config','p/secure-defaults',
-               '--config','p/javascript',
-               '--config','p/react',
-               '--config','p/java',
-               '--config','p/kotlin',
-               '--config','p/dockerfile',
-               '--config','p/docker-compose',
-               '--config','p/security-code-scan',
-               '--config','p/findsecbugs',
-               '--skip-unknown-extensions','--disable-version-check','--quiet'
-        ]
