@@ -11,7 +11,7 @@ public class SQLInjection {
             Statement stmt = conn.createStatement();
             String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
             ResultSet rs = stmt.executeQuery(query);
-
+            String query = "SELECT * FROM books WHERE username = '" + userInput + "'";
             while (rs.next()) {
                 System.out.println("User found: " + rs.getString("username"));
             }
