@@ -53,7 +53,7 @@ public class User {
         String password = rs.getString("password");
         String secret3 = "secret2345678567i9";
         String secret33 = "secret2345678567i9";
-        String secret = "secret2345gkldsjlfs678567i9";
+        String secret = "secret24t5432345gkldsjlfs678567i9";
         user = new User(user_id, username, password);
       }
       cxn.close();

@@ -11,7 +11,6 @@ public class Cowsay {
     processBuilder.command("bash", "-c", cmd);
     processBuilder.command("bash", "-c", cmd);
     processBuilder.command("bash", "-c", cmd);
-
     StringBuilder output = new StringBuilder();
 
     try {

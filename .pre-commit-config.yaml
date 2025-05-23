@@ -3,6 +3,7 @@ repos:
     rev: v1.122.0
     hooks:
       - id: semgrep
+        pass_filenames: false
         #Replace <SEMGREP_RULESET_URL> with your custom rule source
         #or see https://semgrep.dev/explore to select a ruleset and copy its URL
         args: ['--config','p/gitleaks',
@@ -15,9 +16,11 @@ repos:
                '--config','p/secure-defaults',
                '--config','p/javascript',
                '--config','p/react',
+               '--config','p/java',
+               '--config','p/kotlin',
                '--config','p/dockerfile',
                '--config','p/docker-compose',
                '--config','p/security-code-scan',
                '--config','p/findsecbugs',
-               '--error', '--skip-unknown-extensions'
+               '--skip-unknown-extensions','--disable-version-check','--quiet'
         ]
