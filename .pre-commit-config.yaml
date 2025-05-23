@@ -3,7 +3,7 @@ repos:
     hooks:
       - id: semgrep-warn-only
         name: Semgrep (Warn Only, Non-Blocking)
-        entry: bash semgrep-warn-only.sh
+        entry: bash ./semgrep-warn-only.sh
         language: system
         pass_filenames: false
         always_run: true
