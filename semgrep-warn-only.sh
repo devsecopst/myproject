@@ -20,8 +20,7 @@ semgrep \
   --config p/security-code-scan \
   --config p/findsecbugs \
   --skip-unknown-extensions \
-  --disable-version-check \
-  --quiet
+  --disable-version-check
 # Always allow the commit to continue
 exit 0
 
