@@ -23,6 +23,6 @@ repos:
                '--config','p/docker-compose',
                '--config','p/security-code-scan',
                '--config','p/findsecbugs',
-               'error','--skip-unknown-extensions','--disable-version-check','--quiet'
+               'error','--skip-unknown-extensions','--disable-version-check'
         ]
 
