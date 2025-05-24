@@ -6,12 +6,9 @@ semgrep \
   --config p/secrets \
   --config p/comment \
   --config p/cwe-top-25 \
+  --config p/default \
   --config p/owasp-top-ten \
-  --config p/secure-defaults \
-  --config p/javascript \
-  --config p/react \
   --config p/java \
-  --config p/kotlin \
   --config p/dockerfile \
   --config p/docker-compose \
   --config p/security-code-scan \
