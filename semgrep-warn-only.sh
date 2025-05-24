@@ -11,10 +11,12 @@ semgrep \
   --pro \
   --config p/gitleaks \
   --config p/secrets \
+  --config p/command-injection \
+  --config p/insecure-transport \
+  --config p/sql-injection \
   --config p/comment \
   --config p/cwe-top-25 \
   --config p/default \
-  --config p/supply-chain \
   --config p/owasp-top-ten \
   --config p/security-audit \
   --config p/secure-defaults \
