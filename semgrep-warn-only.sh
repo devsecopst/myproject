@@ -20,7 +20,8 @@ semgrep \
   --config p/security-code-scan \
   --config p/findsecbugs \
   --skip-unknown-extensions \
-  --disable-version-check
+  --disable-version-check \
+  --metrics=off \
   .  # ← Don't forget this dot (scan everything in the directory)
 # Don’t block the commit
 exit 0
