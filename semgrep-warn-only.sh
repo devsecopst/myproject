@@ -21,5 +21,7 @@ semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
+  --verbose \
+  --quiet \
   .
 exit 0
