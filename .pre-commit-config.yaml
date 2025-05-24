@@ -2,8 +2,8 @@ repos:
   - repo: local
     hooks:
       - id: semgrep-warn-only
-        name: Semgrep (Warn Only, Non-Blocking)
-        entry: bash -c "bash ./semgrep-warn-only.sh"
+        name: Semgrep (Warn Only)
+        entry: bash ./semgrep-warn-only.sh
         language: system
         pass_filenames: false
         always_run: true
