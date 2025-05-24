@@ -6,4 +6,3 @@ repos:
         entry: bash ./semgrep-warn-only.sh
         language: system
         pass_filenames: false
-        verbose: true
