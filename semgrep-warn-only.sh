@@ -6,12 +6,7 @@ NC='\033[0m' # No Color
 
 echo "🔍 Running Semgrep scan (warn-only)..."
 
-# Ensure you're logged in to Semgrep Pro
-if ! semgrep auth-status | grep -q "You're logged in"; then
-  echo -e "${RED}🚫 Semgrep is not authenticated. Please run: semgrep login${NC}"
-  exit 0  # Don't block commit, just warn
-fi
-
+semgrep login
 # Use Pro rules via --config=auto which pulls managed rules for your org
 semgrep \
   --config=auto \
