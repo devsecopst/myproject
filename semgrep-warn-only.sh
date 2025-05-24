@@ -5,6 +5,7 @@ semgrep \
   --config p/gitleaks \
   --config p/secrets \
   --config p/cwe-top-25 \
+  --config p/default \
   --config p/owasp-top-ten \
   --config p/java \
   --config p/dockerfile \
