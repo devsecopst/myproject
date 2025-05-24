@@ -14,6 +14,7 @@ semgrep \
   --config p/comment \
   --config p/cwe-top-25 \
   --config p/default \
+  --config p/supply-chain \
   --config p/owasp-top-ten \
   --config p/security-audit \
   --config p/secure-defaults \
