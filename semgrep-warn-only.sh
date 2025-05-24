@@ -7,7 +7,7 @@ echo "🔍 Running Semgrep scan (warn-only)..."
 
 
 semgrep \
-  --config=auto \
+  --pro \
   --skip-unknown-extensions \
   --disable-version-check \
   --quiet \
