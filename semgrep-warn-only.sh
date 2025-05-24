@@ -11,7 +11,6 @@ semgrep \
   --config p/java \
   --config p/dockerfile \
   --config p/docker-compose \
-  --config p/security-code-scan \
   --config p/findsecbugs \
   --skip-unknown-extensions \
   --disable-version-check \
