@@ -12,6 +12,5 @@ public class VulnadoApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
 
