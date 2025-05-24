@@ -13,7 +13,6 @@ semgrep \
   --pro \
   --skip-unknown-extensions \
   --disable-version-check \
-  --metrics=off \
   --quiet \
   .
 
