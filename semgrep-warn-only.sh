@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "🔍 Running Semgrep scan (warn-only)..."
 
 semgrep \
@@ -19,6 +18,7 @@ semgrep \
   --config p/docker-compose \
   --config p/security-code-scan \
   --config p/findsecbugs \
+  --severity=INFO \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
