@@ -7,7 +7,6 @@ echo "🔍 Running Semgrep scan (warn-only)..."
 
 semgrep \
   --pro \
-  --config=auto \
   --config p/gitleaks \
   --config p/secrets \
   --config p/comment \
