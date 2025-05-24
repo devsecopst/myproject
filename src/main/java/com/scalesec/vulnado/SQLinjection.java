@@ -13,14 +13,6 @@ public class SQLInjection {
             ResultSet rs = stmt.executeQuery(query);
             String query = "SELECT * FROM CARS WHERE username = '" + userInput + "'";
             String query = "SELECT * FROM CARS WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM flights WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
-            String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
             //emran hattab
             while (rs.next())
             {
