@@ -1,14 +1,5 @@
 #!/bin/bash
-
-echo "🔍 Semgrep scanning staged files..."
-
-# get staged files
-STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.js$|\.java$|\.kt$|\.py$|\.ts$|\.jsx$|\.tsx$|\.yaml$|\.yml$|\.json$|\.dockerfile$' || true)
-
-if [[ -z "$STAGED_FILES" ]]; then
-  echo "⚠️  No staged source files to scan."
-  exit 0
-fi
+echo "🔍 Running Semgrep scan (warn-only)..."
 
 semgrep \
   --config p/gitleaks \
@@ -31,6 +22,6 @@ semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
-  $STAGED_FILES
-
+  .  # ← Don't forget this dot (scan everything in the directory)
+# Don’t block the commit
 exit 0
