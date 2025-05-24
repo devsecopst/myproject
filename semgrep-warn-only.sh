@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "🔍 Running Semgrep scan (warn-only)..."
 set -e
-semgrep \
+RESULTS=$(semgrep \
   --config p/gitleaks \
   --config p/secrets \
   --config p/comment \
@@ -22,6 +22,12 @@ semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
-  .  # ← Don't forget this dot (scan everything in the directory)
+  .)  # ← Don't forget this dot (scan everything in the directory)
 # Don’t block the commit
+if [[ -z "$RESULT" ]]; then
+  echo "✅ No issues found by Semgrep."
+else
+  echo "$RESULT"
+fi
+
 exit 0
