@@ -22,7 +22,7 @@ semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --quiet
-
+  .
 # Always allow the commit to continue
 exit 0
 
