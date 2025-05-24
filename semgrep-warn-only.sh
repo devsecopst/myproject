@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "🔍 Running Semgrep scan (warn-only)..."
-RESULTS=$(semgrep \
+
+semgrep \
   --config p/gitleaks \
   --config p/secrets \
   --config p/comment \
@@ -21,13 +22,5 @@ RESULTS=$(semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
-
-  .)
-
-if [[ -z "$RESULTS" ]]; then
-  echo "✅ No issues found by Semgrep."
-else
-  echo "$RESULTS"
-fi
-
+  .
 exit 0
