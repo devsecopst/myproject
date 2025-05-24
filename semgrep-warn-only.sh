@@ -18,9 +18,11 @@ semgrep \
   --config p/docker-compose \
   --config p/security-code-scan \
   --config p/findsecbugs \
+  --severity=WARNING \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
   --quiet \
   .
+
 exit 0
