@@ -6,6 +6,7 @@ NC='\033[0m' # No Color
 echo "🔍 Running Semgrep scan (warn-only)..."
 
 semgrep \
+  --pro \
   --config p/gitleaks \
   --config p/secrets \
   --config p/comment \
