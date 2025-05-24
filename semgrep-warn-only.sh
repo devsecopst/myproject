@@ -21,7 +21,6 @@ semgrep \
   --metrics=off \
   --quiet \
   .
-echo -e "\n${GREEN}✔️  Scanning process has been completed.${NC} ${RED}📄 Results shown above.${NC}"
-
+echo -e "\n${GREEN}✔️Semgrep security code scan completed.\n\r${NC} ${RED}📄 The results are displayed above. For any questions or concerns, please contact the Security Team.${NC}"
 
 exit 0
