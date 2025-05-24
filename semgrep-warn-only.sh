@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🔎 Running Semgrep in warn-only mode (will NOT block commits)..."
+echo "🔍 Running Semgrep scan (warn-only)..."
 
 semgrep \
   --config p/gitleaks \
@@ -19,8 +19,10 @@ semgrep \
   --config p/docker-compose \
   --config p/security-code-scan \
   --config p/findsecbugs \
+  --severity=INFO \
   --skip-unknown-extensions \
-  --disable-version-check
-# Always allow the commit to continue
+  --disable-version-check \
+  --metrics=off \
+  .  # ← Don't forget this dot (scan everything in the directory)
+# Don’t block the commit
 exit 0
-
