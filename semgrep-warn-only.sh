@@ -22,6 +22,5 @@ semgrep \
   --disable-version-check \
   --metrics=off \
   --quiet \
-
   .
 exit 0
