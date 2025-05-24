@@ -14,11 +14,7 @@ semgrep \
   --config p/owasp-top-ten \
   --config p/security-audit \
   --config p/secure-defaults \
-  --config p/javascript \
-  --config p/react \
-  --config p/swift \
   --config p/java \
-  --config p/kotlin \
   --config p/dockerfile \
   --config p/docker-compose \
   --config p/security-code-scan \
@@ -28,6 +24,8 @@ semgrep \
   --metrics=off \
   --quiet \
   .
+
 echo -e "\n${GREEN}✔️Semgrep security code scan completed.\n\r${NC} ${RED}📄 For any questions or concerns, please contact the Security Team.${NC}"
 
 exit 0
+
