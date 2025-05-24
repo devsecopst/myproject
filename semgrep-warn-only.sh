@@ -13,6 +13,7 @@ semgrep \
   --config p/findsecbugs \
   --skip-unknown-extensions \
   --disable-version-check \
+  --severity=ERROR \
   --metrics=off \
   --quiet \
   .
