@@ -22,6 +22,6 @@ semgrep \
   --disable-version-check \
   --metrics=off \
   --quiet \
-  --json \
+
   .
 exit 0
