@@ -19,10 +19,8 @@ semgrep \
   --config p/docker-compose \
   --config p/security-code-scan \
   --config p/findsecbugs \
-  --severity=INFO \
   --skip-unknown-extensions \
-  --disable-version-check \
-  --metrics=off \
+  --disable-version-check
   .  # ← Don't forget this dot (scan everything in the directory)
 # Don’t block the commit
 exit 0
