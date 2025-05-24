@@ -22,7 +22,8 @@ semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --quiet
-  .
+echo "Files in current directory:"
+find . -type f
 # Always allow the commit to continue
 exit 0
 
