@@ -81,7 +81,6 @@ semgrep \
   --config p/security-code-scan \
   --config p/findsecbugs \
   --skip-unknown-extensions \
-  --pro \
   --disable-version-check \
   --metrics=off \
   --quiet \
