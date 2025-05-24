@@ -19,6 +19,9 @@ public class SQLInjection {
                 System.out.println("User found: " + rs.getString("username"));
                 System.out.println("User found: " + rs.getString("username"));
                 System.out.println("User found: " + rs.getString("username"));
+                System.out.println("User found: " + rs.getString("username"));
+                System.out.println("User found: " + rs.getString("username"));
+                System.out.println("User found: " + rs.getString("username"));
             }
             conn.close();
         } catch (Exception e) {
