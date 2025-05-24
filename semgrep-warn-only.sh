@@ -21,6 +21,7 @@ RESULTS=$(semgrep \
   --skip-unknown-extensions \
   --disable-version-check \
   --metrics=off \
+
   .)
 
 if [[ -z "$RESULTS" ]]; then
