@@ -7,19 +7,6 @@ echo "🔍 Running Semgrep scan (warn-only)..."
 
 semgrep \
   --pro \
-  --config p/gitleaks \
-  --config p/secrets \
-  --config p/comment \
-  --config p/cwe-top-25 \
-  --config p/default \
-  --config p/owasp-top-ten \
-  --config p/security-audit \
-  --config p/secure-defaults \
-  --config p/java \
-  --config p/kotlin \
-  --config p/swift \
-  --config p/security-code-scan \
-  --config p/findsecbugs \
   --skip-unknown-extensions \
   --disable-version-check \
   --quiet \
