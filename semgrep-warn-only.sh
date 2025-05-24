@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "🔍 Running Semgrep scan (warn-only)..."
-
+set -e
 semgrep \
   --config p/gitleaks \
   --config p/secrets \
