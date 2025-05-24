@@ -21,6 +21,7 @@ public class SQLInjection {
             String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
             String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
             String query = "SELECT * FROM boats WHERE username = '" + userInput + "'";
+            //emran hattab
             while (rs.next())
             {
                 System.out.println("User found: " + rs.getString("username"));
