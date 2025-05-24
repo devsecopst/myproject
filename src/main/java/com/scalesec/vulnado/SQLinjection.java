@@ -16,8 +16,7 @@ public class SQLInjection {
             //emran hattab
             while (rs.next())
             {
-                System.out.println("User found: " + rs.getString("username"));
-                System.out.println("User found: " + rs.getString("username"));
+
                 System.out.println("User found: " + rs.getString("username"));
                 System.out.println("User found: " + rs.getString("username"));
                 System.out.println("User found: " + rs.getString("username"));
