@@ -15,7 +15,6 @@ semgrep \
   --config p/command-injection \
   --config p/insecure-transport \
   --config p/sql-injection \
-  --config p/comment \
   --config p/cwe-top-25 \
   --config p/default \
   --config p/owasp-top-ten \
