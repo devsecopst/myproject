@@ -4,10 +4,10 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 echo "🔍 Running Semgrep scan (warn-only)..."
-if [ ! -f "$HOME/.semgrep/semgrep_app_token" ]; then
-  echo -e "${YELLOW}⚠️  Semgrep Pro is not authenticated. Running 'semgrep login'...${NC}"
-  semgrep login
-fi
+
+semgrep login
+
+
 semgrep \
   --config=auto \
   --pro \
