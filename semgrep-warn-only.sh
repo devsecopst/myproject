@@ -8,6 +8,7 @@ echo "🔍 Running Semgrep scan (warn-only)..."
 semgrep login
 
 
+
 semgrep \
   --config=auto \
   --pro \
